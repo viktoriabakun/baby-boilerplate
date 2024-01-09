@@ -1,6 +1,6 @@
 {
-  "name": "baby-boilerplate",
-  "private": true,
+  "name": "BOILERPLATE",
+  "private": false,
   "version": "0.0.0",
   "type": "module",
   "scripts": {

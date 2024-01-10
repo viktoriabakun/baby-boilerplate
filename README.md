@@ -1,5 +1,7 @@
 # Baby Boilerplate 🍼
 
+![Banner here my friends](https://github.com/viktoriabakun/baby-boilerplate/blob/media/banner.png)
+
 ## Overview
 
 **Baby Boilerplate** is a sassy and lightweight starter kit for your pet projects. Designed to be simple yet powerful, it gives you the perfect foundation to kickstart your creative coding journey. Whether you're a coding ninja or just starting, this boilerplate will cuddle you through the process.

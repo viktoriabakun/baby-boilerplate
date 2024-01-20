@@ -1,10 +1,8 @@
-import styles from './App.module.scss';
+import HomePage from './pages/home';
 
 function App() {
   return (
-    <div className={styles.container}>
-      Hello world!
-    </div>
+    <HomePage />
   );
 }
 

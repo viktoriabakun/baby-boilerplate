@@ -1,0 +1,1 @@
+#### Images and icons. May be split into separate folders

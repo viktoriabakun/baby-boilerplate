@@ -1,7 +1,7 @@
 # Here are some best practices to empower us in crafting good code ✨
 ### *It's a starter 🍼 pack, the content will be continuously updated*
 
-## [ 0.  General ]
+## [ 0. General ]
 
 ### Prefer shortened arrow functions if there is one line of code
 
@@ -99,7 +99,7 @@ class ErrorBoundary extends React.Component {
 }
 ```
 
-## [ 2.  TypeScript ]
+## [ 2. TypeScript ]
 
 ### Leverage Type Inference
 
@@ -138,4 +138,85 @@ age: number;
 }
 
 const user: User = { name: "John", age: 30 };
+```
+
+## [ 3. SASS(SCSS) ]
+
+### Commenting, SassDoc
+CSS is a tricky language; do not hesitate to write very extensive comments about things that look (or are) ***fishy***.
+
+> Use SassDoc comments for variables, functions, mixins and placeholders establishing a public API
+```scss
+/// Computes an exponent.
+///
+/// @param {number} $base
+///   The number to multiply by itself.
+/// @param {integer (unitless)} $exponent
+///   The number of `$base`s to multiply together.
+/// @return {number} `$base` to the power of `$exponent`.
+@function pow($base, $exponent) {
+  $result: 1;
+  @for $_ from 1 through $exponent {
+    $result: $result * $base;
+  }
+  @return $result;
+}
+```
+
+### Whitespace is free
+use it to separate items, rules and declarations. Do not hesitate to leave empty lines, it never hurts.
+
+```scss
+// avoid
+body {
+  font-family:'Arial',sans-serif;color: white; // I hope nobody writes like this, hehe
+}
+.header {
+  padding: 10px;
+}
+
+
+// prefer
+body {
+  font-family: 'Arial', sans-serif;
+  color: white;
+}
+
+.header {
+  padding: 10px;
+}
+```
+
+### A zero (0) length should not have a unit.
+*( ! may be **exceptions** when working with **animations optimisation**)*
+```scss
+// avoid
+.element {
+  margin: 0px;
+  padding: 0px;
+}
+
+// prefer
+.element {
+  margin: 0;
+  padding: 0;
+}
+```
+
+### Magic Numbers
+Magic numbers dramatically hurt code maintainability and should be avoided at all time. When in doubt, extensively explain the questionable value.
+
+> In this example, instead of directly using the magic number 960px in the styles, we've assigned it to a named constant $container-width. This way, if the width needs to be changed later, you only need to update the value of the constant, making the code more readable and maintainable.
+```scss
+// avoid
+.container {
+  width: 960px;
+}
+
+// prefer
+$container-width: 960px;
+
+.container {
+  width: $container-width;
+}
 ```

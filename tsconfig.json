@@ -6,8 +6,9 @@
     "module": "ESNext",
     "skipLibCheck": true,
     "types": ["node"],
+    "baseUrl": ".",
     "paths": {
-      "@/*": ["./src/*"],
+      "@/*": ["./src/*","./dist/*", ""],
       "@app/*": ["./src/app/*"],
       "@entities/*": ["./src/entities/*"],
       "@features/*": ["./src/features/*"],

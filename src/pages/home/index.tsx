@@ -1,8 +1,11 @@
+import { Counter } from '@components//counter/counter.tsx';
+
 import styles from './styles.module.scss';
 
 const HomePage = () => (
   <div className={styles.container}>
-    Hello world!
+    <div>Hello world!</div>
+    <Counter />
   </div>
 );
 

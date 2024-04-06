@@ -7,6 +7,18 @@ import * as path from 'path';
 export default defineConfig({
   plugins: [react()],
   resolve: {
-    alias: [{ find: '@', replacement: path.resolve(__dirname, 'src') }],
+    alias: {
+      '@': path.resolve(__dirname, './src/'),
+      '@assets': `${path.resolve(__dirname, './src/assets/')}`,
+      '@fonts': `${path.resolve(__dirname, './src/assets/fonts/')}`,
+      '@img': path.resolve(__dirname, './src/assets/img'),
+      '@styles': `${path.resolve(__dirname, './src/assets/styles')}`,
+      '@common': `${path.resolve(__dirname, './src/common')}`,
+      '@components': `${path.resolve(__dirname, './src/common/components')}`,
+      '@constants': `${path.resolve(__dirname, './src/common/constants')}`,
+      '@helpers': `${path.resolve(__dirname, './src/common/helpers')}`,
+      '@interfaces': `${path.resolve(__dirname, './src/common/interfaces')}`,
+      '@pages': `${path.resolve(__dirname, './src/pages')}`,
+    },
   },
 });

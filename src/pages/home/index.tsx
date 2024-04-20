@@ -1,9 +1,10 @@
 import { Counter } from '@components//counter/counter.tsx';
 
-import styles from './styles.module.scss';
+import './styles.css';
+// @TODO: remove css file, add tailwind classes
 
 const HomePage = () => (
-  <div className={styles.container}>
+  <div className="container">
     <div>Hello world!</div>
     <Counter />
   </div>

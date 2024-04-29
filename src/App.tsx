@@ -1,9 +1,5 @@
-import HomePage from '@pages/home';
+import { HomePage } from '@pages/home';
 
-function App() {
-  return (
-    <HomePage />
-  );
+export function App() {
+  return <HomePage />;
 }
-
-export default App;

@@ -1,10 +1,8 @@
 import { Counter } from '@components//counter/counter.tsx';
 
-const HomePage = () => (
-  <div className="w-full h-screen flex flex-col justify-center items-center text-center bg-blue-200 text-fuchsia-50 font-bold text-[15vw]">
+export const HomePage = () => (
+  <div className="flex h-screen w-full flex-col items-center justify-center bg-blue-200 text-center text-[15vw] font-bold text-fuchsia-50">
     <div>Hello world!</div>
     <Counter />
   </div>
 );
-
-export default HomePage;

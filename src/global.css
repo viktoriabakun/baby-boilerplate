@@ -2,15 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-/*
- * Top-level styles
- */
-
-/*
- * About Normalise.css
- * 'normalize.css' is already imported in main.tsx file as a package
- */
-
 * {
   box-sizing: border-box;
 }

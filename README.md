@@ -13,6 +13,7 @@
 - **TypeScript:** Adding that extra layer of swagger.
 - **Tailwind CSS:** Styling with flair.
 - **ESLint:** Keeping your code stylish and error-free.
+- **Prettier:** Making your code pretty.
 - **pnpm:** Because we like our packages lightweight and fast.
 
 ## Customize it! ⚙️

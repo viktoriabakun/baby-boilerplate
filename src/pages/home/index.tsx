@@ -1,10 +1,7 @@
 import { Counter } from '@components//counter/counter.tsx';
 
-import './styles.css';
-// @TODO: remove css file, add tailwind classes
-
 const HomePage = () => (
-  <div className="container">
+  <div className="w-full h-screen flex flex-col justify-center items-center text-center bg-blue-200 text-fuchsia-50 font-bold text-[15vw]">
     <div>Hello world!</div>
     <Counter />
   </div>

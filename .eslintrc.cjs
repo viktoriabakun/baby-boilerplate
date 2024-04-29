@@ -6,10 +6,11 @@ module.exports = {
     'plugin:react-hooks/recommended',
     'plugin:react/recommended',
     'plugin:import/errors',
+    "eslint-config-prettier"
   ],
   parser: '@typescript-eslint/parser',
   parserOptions: { ecmaVersion: 'latest', sourceType: 'module' },
-  plugins: ['react-refresh', 'import'],
+  plugins: ['react-refresh', 'import', 'prettier'],
   rules: {
     'react-refresh/only-export-components': 'warn',
     indent: ['error', 2, {SwitchCase: 1}],
@@ -61,6 +62,7 @@ module.exports = {
     ],
     'import/named': 'off',
     "no-unused-vars": "off",
-    "@typescript-eslint/no-unused-vars": ["warn"]
+    "@typescript-eslint/no-unused-vars": ["warn"],
+    "prettier/prettier": "error",
   },
 }

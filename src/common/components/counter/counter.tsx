@@ -5,9 +5,9 @@ export const Counter = () => {
   const increment = () => setCount((prev) => prev + 1);
 
   return (
-    <div className="flex items-center gap-5 text-[7vw]">
+    <button onClick={increment} className="flex items-center gap-5 text-2xl">
       <span>{count}</span>
-      <button onClick={increment}>+</button>
-    </div>
+      <span>+</span>
+    </button>
   );
 };
